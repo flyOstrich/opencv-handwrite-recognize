@@ -5,6 +5,7 @@
       <sourceFolder url="file://$MODULE_DIR$/mousedraw.cpp" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/main.cpp" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/mousedraw.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/train.cpp" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/CMakeLists.txt" isTestSource="false" />
     </content>
     <orderEntry type="sourceFolder" forTests="false" />
