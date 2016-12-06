@@ -4,7 +4,7 @@
 #include <iostream>
 #include "mousedraw.h"
 #include <dirent.h>
-#include "train.cpp"
+#include "train.h"
 
 
 #define FILE_PATH_MAX 80
@@ -177,8 +177,11 @@ int main() {
 
       string dir=getProjectDir();
       const char* dirname= dir.c_str();
+      const char* ext=".xml";
 
-    Train::FileScanner scanner;
+      Train::FileScanner scanner;
+
+      scanner.getFiles(dirname,ext);
 
 //    string input = "";
 //    int myNumber = 0;
