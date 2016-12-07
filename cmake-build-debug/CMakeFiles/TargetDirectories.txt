@@ -1,3 +1,0 @@
-/Users/pjl/opencv-handwrite-recognize/cmake-build-debug/CMakeFiles/edit_cache.dir
-/Users/pjl/opencv-handwrite-recognize/cmake-build-debug/CMakeFiles/rebuild_cache.dir
-/Users/pjl/opencv-handwrite-recognize/cmake-build-debug/CMakeFiles/opencv-handwrite-recognize.dir

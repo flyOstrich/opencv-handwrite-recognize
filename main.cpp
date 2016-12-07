@@ -1,17 +1,10 @@
 ﻿#include <opencv2/opencv.hpp>
 #include <fstream>
-#include <unistd.h>
-#include <iostream>
-#include "mousedraw.h"
+#include "mouse-draw/mousedraw.h"
 #include <dirent.h>
-#include "train.h"
+#include "train/train.h"
+#include "common.h"
 
-
-#define FILE_PATH_MAX 80
-#define HOG_SVM_DATA getProjectDir()+"/HOG_SVM_DATA.xml"
-#define HOG_TXT_DATA getProjectDir()+"/train-images/result.txt"
-#define MOUSE_DRAW_IMG getProjectDir()+"/mouse_draw.jpg"
-#define LABEL_CHARACTER_MAP getProjectDir()+"/label_character_map.txt"
 
 
 
@@ -20,50 +13,19 @@ using namespace cv;
 
 
 
-//获取项目的根目录
-string getProjectDir() {
-    char *file_path;
-    file_path = (char *) malloc(FILE_PATH_MAX);
-    getcwd(file_path, FILE_PATH_MAX);
-    string str = file_path;
-    string rt;
-    unsigned long len = str.length();
-    for (unsigned long i = len; i > 0; i--) {
-        char character = *(file_path + i);
-        char *separator = "/";
-        if (character == *separator) {
-            rt=str.substr(0,i);
-            break;
-        }
-    }
-    return rt;
 
-}
-map<int,string> getLabelCharacterMap(){
-    ifstream labelCharacterData(LABEL_CHARACTER_MAP);
-    string* buf=(string*)malloc(sizeof(char)*10);
-    map<int,string> res;
-    while(labelCharacterData){
-       if(getline(labelCharacterData,*buf)){
-           size_t loc=buf->find_first_of(":");
-           string sLabel=buf->substr(0,loc);
-           int nLabel=stoi(sLabel);
-           string sCharacter=buf->substr(loc+1,buf->length());
-           pair<int,string> mapItem=pair<int,string>(nLabel,sCharacter);
-           res.insert(mapItem);
-       }
-    }
-    return res;
-}
+
 
 void buildImg() {
     BoxExtractor box;
     Mat res = box.MouseDraw("draw", Mat(400, 400, CV_8UC3, Scalar(0, 0, 0)), Scalar(255, 255, 255), 18);
-    string mouse_draw_img=MOUSE_DRAW_IMG;
+    string mouse_draw_img = MOUSE_DRAW_IMG;
     imwrite(mouse_draw_img, res);
 }
 
 void testTrain() {
+    Train::FileScanner fileScanner;
+    fileScanner.genPathTextForTrain(getProjectDir() + "/train/train-images", "result.txt");
     vector<string> img_path;//输入文件名变量
     vector<int> img_catg;
     int nLine = 0;
@@ -72,7 +34,7 @@ void testTrain() {
     unsigned long n;
     while (svm_data)//将训练样本文件依次读取进来
     {
-        cout<<"read...."<<endl;
+        cout << "read...." << endl;
         if (getline(svm_data, buf)) {
             nLine++;
             if (nLine % 2 == 0)//注：奇数行是图片全路径，偶数行是标签
@@ -125,8 +87,8 @@ void testTrain() {
     svm.train(data_mat, res_mat, NULL, NULL, param);//训练数据
     //保存训练好的分类器
     std::cout << "saving... ... !!! \n " << endl;
-    string hog_svm_data_file_s=HOG_SVM_DATA;
-    const char* hog_svm_data_file= hog_svm_data_file_s.c_str();
+    string hog_svm_data_file_s = HOG_SVM_DATA;
+    const char *hog_svm_data_file = hog_svm_data_file_s.c_str();
     svm.save(hog_svm_data_file);
     cout << "HOG_SVM_DATA.xml is saved !!! \n exit train process" << endl;
     cvReleaseMat(&data_mat);
@@ -139,12 +101,13 @@ void testPredict() {
     char result[300]; //存放预测结果
 
     CvSVM svm;
-    string hog_svm_data_s=HOG_SVM_DATA;
-    const char* hog_svm_data=hog_svm_data_s.c_str();
+    Train::FileScanner scanner;
+    string hog_svm_data_s = HOG_SVM_DATA;
+    const char *hog_svm_data = hog_svm_data_s.c_str();
     svm.load(hog_svm_data);//加载训练好的xml文件，这里训练的是10K个手写数字
     //检测样本
-    string mouse_draw_img=MOUSE_DRAW_IMG;
-    const char* draw_img=mouse_draw_img.c_str();
+    string mouse_draw_img = MOUSE_DRAW_IMG;
+    const char *draw_img = mouse_draw_img.c_str();
     test = cvLoadImage(draw_img, 1); //待预测图片，用系统自带的画图工具随便手写
     if (!test) {
         cout << "not exist" << endl;
@@ -166,49 +129,45 @@ void testPredict() {
     }
 
     int ret = svm.predict(SVMtrainMat);//检测结果
-    map<int,string> res=getLabelCharacterMap();
-    map<int,string>::iterator it=res.find(ret);
-    cout<<it->second<<endl;
+    map<int, string> res = scanner.getLabelCharacterMap();
+    map<int, string>::iterator it = res.find(ret);
+    cout << it->second << endl;
     cvReleaseImage(&test);
     cvReleaseImage(&trainTempImg);
 }
 
 int main() {
-
-      string dir=getProjectDir();
-      const char* dirname= dir.c_str();
-      const char* ext=".xml";
-
-      Train::FileScanner scanner;
-
-      scanner.getFiles(dirname,ext);
-
-//    string input = "";
-//    int myNumber = 0;
-//    while (true) {
-//        cout << "Please Select: \n1  build the d:\\test.jpg\n2  build the d:\\HOG_SVM_DATA.xml\n3  predict the d:\\test.jpg\n\n";
-//        getline(cin, input);
-//        stringstream myStream(input);
-//        if (myStream >> myNumber)
-//            break;
-//        cout << "Invalid number, please try again" << endl;
-//    }
-//    cout << "You entered: " << myNumber << endl << endl;
-//    switch( myNumber ){
-//    // update the selected bounding box
-//    case 1:
-//        buildImg(); // 1. build the d:\\test.jpg
-//             testPredict();  // 3. predict the d:\\test.jpg
-//        break;
-//    case 2:
-//        testTrain();   // 2. build the d:\\HOG_SVM_DATA.xml
-//        break;
-//    case 3:
-//        testPredict();  // 3. predict the d:\\test.jpg
-//        break;
-//    }
-//    cout << endl;
+    Train::FileScanner fileScanner;
+//      fileScanner.buildTrainImgsByConfig(getProjectDir()+"/train","train-config.txt");
+//      fileScanner.genPathTextForTrain(getProjectDir() + "/train/train-images", "result.txt");
 //    return 0;
+    string input = "";
+    int myNumber = 0;
+    while (true) {
+        cout <<
+        "Please Select: \n1  build the d:\\test.jpg\n2  build the d:\\HOG_SVM_DATA.xml\n3  predict the d:\\test.jpg\n\n";
+        getline(cin, input);
+        stringstream myStream(input);
+        if (myStream >> myNumber)
+            break;
+        cout << "Invalid number, please try again" << endl;
+    }
+    cout << "You entered: " << myNumber << endl << endl;
+    switch (myNumber) {
+        // update the selected bounding box
+        case 1:
+            buildImg(); // 1. build the d:\\test.jpg
+            testPredict();  // 3. predict the d:\\test.jpg
+            break;
+        case 2:
+            testTrain();   // 2. build the d:\\HOG_SVM_DATA.xml
+            break;
+        case 3:
+            testPredict();  // 3. predict the d:\\test.jpg
+            break;
+    }
+    cout << endl;
+    return 0;
 }
 
 
