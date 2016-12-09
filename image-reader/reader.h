@@ -1,11 +1,18 @@
 #pragma once
+
 #include "../common.h"
 #include <highgui.h>
+#include <list>
 
 using namespace cv;
 namespace Reader {
     class ImageReader {
     public:
-        Mat readMatOfImage(char* image_url);
+        list<list<IplImage*>> readMatOfImage(char *image_url);
+
+    private:
+        IplImage *getRowIplImage(IplImage *image, int startRow, int endRow,string direction);
+        list<IplImage*> cutIplImage(IplImage* image,string direction);
+        int getRowScanImgExpectCnt(IplImage *image);
     };
 }

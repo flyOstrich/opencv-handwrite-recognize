@@ -95,7 +95,7 @@ void testTrain() {
     cvReleaseImage(&trainImg);
 }
 
-void testPredict() {
+void testPredict(IplImage* img) {
     IplImage *test;
     char result[300]; //存放预测结果
 
@@ -107,7 +107,8 @@ void testPredict() {
     //检测样本
     string mouse_draw_img = MOUSE_DRAW_IMG;
     const char *draw_img = mouse_draw_img.c_str();
-    test = cvLoadImage(draw_img, 1); //待预测图片，用系统自带的画图工具随便手写
+//    test = cvLoadImage(draw_img, 1); //待预测图片，用系统自带的画图工具随便手写
+    test=img;
     if (!test) {
         cout << "not exist" << endl;
         return;
@@ -115,7 +116,7 @@ void testPredict() {
     cout << "load image done" << endl;
     IplImage *trainTempImg = cvCreateImage(cvSize(28, 28), 8, 3);
     cvZero(trainTempImg);
-    cvResize(test, trainTempImg);
+    cvResize(img, trainTempImg);
     HOGDescriptor *hog = new HOGDescriptor(cvSize(28, 28), cvSize(14, 14), cvSize(7, 7), cvSize(7, 7), 9);
     vector<float> descriptors;//存放结果
     hog->compute(trainTempImg, descriptors, Size(1, 1), Size(0, 0)); //Hog特征计算
@@ -138,43 +139,20 @@ void testPredict() {
 int main() {
 
     Reader::ImageReader image_reader;
-    char image_url[]="/Users/allere/opencv-handwrite-recognize/meinv.jpeg";
-    image_reader.readMatOfImage(image_url);
-//    char a=244;
-//    int b=(int)a;
-
-    return 0;
-
-//    Train::FileScanner fileScanner;
-//      fileScanner.buildTrainImgsByConfig(getProjectDir()+"/train","train-config.txt");
-//      fileScanner.genPathTextForTrain(getProjectDir() + "/train/train-images", "result.txt");
-//    return 0;
-    string input = "";
-    int myNumber = 0;
-    while (true) {
-        cout <<
-        "Please Select: \n1  build the d:\\test.jpg\n2  build the d:\\HOG_SVM_DATA.xml\n3  predict the d:\\test.jpg\n\n";
-        getline(cin, input);
-        stringstream myStream(input);
-        if (myStream >> myNumber)
-            break;
-        cout << "Invalid number, please try again" << endl;
+    char image_url[]="/Users/allere/opencv-handwrite-recognize/numbers.png";
+    list<list<IplImage*>> imgMat=image_reader.readMatOfImage(image_url);
+    while (!imgMat.empty()){
+        list<IplImage*> listItem=imgMat.front();
+        while(!listItem.empty()){
+            IplImage* img=listItem.front();
+//            testPredict(img);
+            cvShowImage("AAAAA",img);
+            cvWaitKey(0);
+            listItem.pop_front();
+        }
+        imgMat.pop_front();
     }
-    cout << "You entered: " << myNumber << endl << endl;
-    switch (myNumber) {
-        // update the selected bounding box
-        case 1:
-            buildImg(); // 1. build the d:\\test.jpg
-            testPredict();  // 3. predict the d:\\test.jpg
-            break;
-        case 2:
-            testTrain();   // 2. build the d:\\HOG_SVM_DATA.xml
-            break;
-        case 3:
-            testPredict();  // 3. predict the d:\\test.jpg
-            break;
-    }
-    cout << endl;
+
     return 0;
 }
 
