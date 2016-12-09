@@ -86,7 +86,7 @@ void Train::FileScanner::buildTrainImgsByConfig(string dirname,string trainConfi
         int2str(val,cVal);
         for(int i=0;i<count;i++){
             const char* dn=dirname.c_str();
-            char* ext=".bmp";
+            char ext[]=".bmp";
             list<string> imgs=fileScanner.getFiles(dn,ext);
             int exist_count=0;
             while(!imgs.empty()){

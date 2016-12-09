@@ -4,8 +4,7 @@
 #include <dirent.h>
 #include "train/train.h"
 #include "common.h"
-
-
+#include "image-reader/reader.h"
 
 
 using namespace std;
@@ -137,7 +136,16 @@ void testPredict() {
 }
 
 int main() {
-    Train::FileScanner fileScanner;
+
+    Reader::ImageReader image_reader;
+    char image_url[]="/Users/allere/opencv-handwrite-recognize/meinv.jpeg";
+    image_reader.readMatOfImage(image_url);
+//    char a=244;
+//    int b=(int)a;
+
+    return 0;
+
+//    Train::FileScanner fileScanner;
 //      fileScanner.buildTrainImgsByConfig(getProjectDir()+"/train","train-config.txt");
 //      fileScanner.genPathTextForTrain(getProjectDir() + "/train/train-images", "result.txt");
 //    return 0;

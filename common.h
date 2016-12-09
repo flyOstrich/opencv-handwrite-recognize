@@ -1,11 +1,7 @@
 //
 // Created by allere on 16/12/7.
 //
-
-#ifndef OPENCV_HANDWRITE_RECOGNIZE_COMMON_H
-#define OPENCV_HANDWRITE_RECOGNIZE_COMMON_H
-
-#endif //OPENCV_HANDWRITE_RECOGNIZE_COMMON_H
+#pragma once
 
 #include <iostream>
 #include <cv.h>
@@ -31,7 +27,7 @@ inline string getProjectDir() {
     unsigned long len = str.length();
     for (unsigned long i = len; i > 0; i--) {
         char character = *(file_path + i);
-        char *separator = "/";
+        char separator[] = "/";
         if (character == *separator) {
             rt = str.substr(0, i);
             break;
@@ -40,3 +36,4 @@ inline string getProjectDir() {
     return rt;
 
 }
+

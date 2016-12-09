@@ -1,8 +1,11 @@
-//
-// Created by allere on 16/12/8.
-//
+#pragma once
+#include "../common.h"
+#include <highgui.h>
 
-#ifndef OPENCV_HANDWRITE_RECOGNIZE_READER_H
-#define OPENCV_HANDWRITE_RECOGNIZE_READER_H
-
-#endif //OPENCV_HANDWRITE_RECOGNIZE_READER_H
+using namespace cv;
+namespace Reader {
+    class ImageReader {
+    public:
+        Mat readMatOfImage(char* image_url);
+    };
+}
