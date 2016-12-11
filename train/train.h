@@ -16,6 +16,7 @@ namespace Train {
         void genPathTextForTrain(string dir,string text_file_name);
         void buildImg(string img_url,string img_title);
         void buildTrainImgsByConfig(string dirname,string trainConfigFile);
+        void train();
 
     };
 

@@ -2,7 +2,6 @@
 <project version="4">
   <component name="CMakeRunConfigurationManager" shouldGenerate="true" buildAllGenerated="true">
     <generated>
-      <config projectName="untitled" targetName="untitled" />
       <config projectName="opencv-handwrite-recognize" targetName="opencv-handwrite-recognize" />
     </generated>
   </component>
@@ -12,12 +11,128 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="32bd326a-73dd-4d88-a946-ea6deeef3932" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
+    <list default="true" id="76df5820-1b65-4d3b-886e-d158bbe64c18" name="Default" comment="">
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/.name" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/encodings.xml" afterPath="" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/train/train-images/0_2.bmp" afterPath="$PROJECT_DIR$/train/train-text/0_2.bmp" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/train/train-images/0_3.bmp" afterPath="$PROJECT_DIR$/train/train-text/0_3.bmp" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/train/train-images/0_4.bmp" afterPath="$PROJECT_DIR$/train/train-text/0_4.bmp" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/train/train-images/0_5.bmp" afterPath="$PROJECT_DIR$/train/train-text/0_5.bmp" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/train/train-images/10_1.bmp" afterPath="$PROJECT_DIR$/train/train-text/10_1.bmp" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/train/train-images/10_2.bmp" afterPath="$PROJECT_DIR$/train/train-text/10_2.bmp" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/train/train-images/10_3.bmp" afterPath="$PROJECT_DIR$/train/train-text/10_3.bmp" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/train/train-images/10_4.bmp" afterPath="$PROJECT_DIR$/train/train-text/10_4.bmp" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/train/train-images/10_5.bmp" afterPath="$PROJECT_DIR$/train/train-text/10_5.bmp" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/train/train-images/11_1.bmp" afterPath="$PROJECT_DIR$/train/train-text/11_1.bmp" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/train/train-images/11_2.bmp" afterPath="$PROJECT_DIR$/train/train-text/11_2.bmp" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/train/train-images/11_3.bmp" afterPath="$PROJECT_DIR$/train/train-text/11_3.bmp" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/train/train-images/11_4.bmp" afterPath="$PROJECT_DIR$/train/train-text/11_4.bmp" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/train/train-images/11_5.bmp" afterPath="$PROJECT_DIR$/train/train-text/11_5.bmp" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/train/train-images/12_1.bmp" afterPath="$PROJECT_DIR$/train/train-text/12_1.bmp" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/train/train-images/12_2.bmp" afterPath="$PROJECT_DIR$/train/train-text/12_2.bmp" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/train/train-images/12_3.bmp" afterPath="$PROJECT_DIR$/train/train-text/12_3.bmp" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/train/train-images/12_4.bmp" afterPath="$PROJECT_DIR$/train/train-text/12_4.bmp" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/train/train-images/12_5.bmp" afterPath="$PROJECT_DIR$/train/train-text/12_5.bmp" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/train/train-images/13_1.bmp" afterPath="$PROJECT_DIR$/train/train-text/13_1.bmp" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/train/train-images/13_2.bmp" afterPath="$PROJECT_DIR$/train/train-text/13_2.bmp" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/train/train-images/13_3.bmp" afterPath="$PROJECT_DIR$/train/train-text/13_3.bmp" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/train/train-images/13_4.bmp" afterPath="$PROJECT_DIR$/train/train-text/13_4.bmp" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/train/train-images/13_5.bmp" afterPath="$PROJECT_DIR$/train/train-text/13_5.bmp" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/train/train-images/14_1.bmp" afterPath="$PROJECT_DIR$/train/train-text/14_1.bmp" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/train/train-images/14_2.bmp" afterPath="$PROJECT_DIR$/train/train-text/14_2.bmp" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/train/train-images/14_3.bmp" afterPath="$PROJECT_DIR$/train/train-text/14_3.bmp" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/train/train-images/14_4.bmp" afterPath="$PROJECT_DIR$/train/train-text/14_4.bmp" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/train/train-images/14_5.bmp" afterPath="$PROJECT_DIR$/train/train-text/14_5.bmp" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/train/train-images/15_1.bmp" afterPath="$PROJECT_DIR$/train/train-text/15_1.bmp" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/train/train-images/15_2.bmp" afterPath="$PROJECT_DIR$/train/train-text/15_2.bmp" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/train/train-images/15_3.bmp" afterPath="$PROJECT_DIR$/train/train-text/15_3.bmp" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/train/train-images/15_4.bmp" afterPath="$PROJECT_DIR$/train/train-text/15_4.bmp" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/train/train-images/15_5.bmp" afterPath="$PROJECT_DIR$/train/train-text/15_5.bmp" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/train/train-images/16_1.bmp" afterPath="$PROJECT_DIR$/train/train-text/16_1.bmp" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/train/train-images/16_2.bmp" afterPath="$PROJECT_DIR$/train/train-text/16_2.bmp" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/train/train-images/16_3.bmp" afterPath="$PROJECT_DIR$/train/train-text/16_3.bmp" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/train/train-images/16_4.bmp" afterPath="$PROJECT_DIR$/train/train-text/16_4.bmp" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/train/train-images/16_5.bmp" afterPath="$PROJECT_DIR$/train/train-text/16_5.bmp" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/train/train-images/18_1.bmp" afterPath="$PROJECT_DIR$/train/train-text/18_1.bmp" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/train/train-images/18_2.bmp" afterPath="$PROJECT_DIR$/train/train-text/18_2.bmp" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/train/train-images/19_1.bmp" afterPath="$PROJECT_DIR$/train/train-text/19_1.bmp" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/train/train-images/19_2.bmp" afterPath="$PROJECT_DIR$/train/train-text/19_2.bmp" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/train/train-images/1_1.bmp" afterPath="$PROJECT_DIR$/train/train-text/1_1.bmp" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/train/train-images/1_2.bmp" afterPath="$PROJECT_DIR$/train/train-text/1_2.bmp" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/train/train-images/1_3.bmp" afterPath="$PROJECT_DIR$/train/train-text/1_3.bmp" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/train/train-images/1_4.bmp" afterPath="$PROJECT_DIR$/train/train-text/1_4.bmp" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/train/train-images/1_5.bmp" afterPath="$PROJECT_DIR$/train/train-text/1_5.bmp" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/train/train-images/20_1.bmp" afterPath="$PROJECT_DIR$/train/train-text/20_1.bmp" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/train/train-images/20_2.bmp" afterPath="$PROJECT_DIR$/train/train-text/20_2.bmp" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/train/train-images/21_1.bmp" afterPath="$PROJECT_DIR$/train/train-text/21_1.bmp" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/train/train-images/21_2.bmp" afterPath="$PROJECT_DIR$/train/train-text/21_2.bmp" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/train/train-images/21_3.bmp" afterPath="$PROJECT_DIR$/train/train-text/21_3.bmp" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/train/train-images/21_4.bmp" afterPath="$PROJECT_DIR$/train/train-text/21_4.bmp" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/train/train-images/22_1.bmp" afterPath="$PROJECT_DIR$/train/train-text/22_1.bmp" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/train/train-images/22_2.bmp" afterPath="$PROJECT_DIR$/train/train-text/22_2.bmp" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/train/train-images/22_3.bmp" afterPath="$PROJECT_DIR$/train/train-text/22_3.bmp" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/train/train-images/22_4.bmp" afterPath="$PROJECT_DIR$/train/train-text/22_4.bmp" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/train/train-images/22_5.bmp" afterPath="$PROJECT_DIR$/train/train-text/22_5.bmp" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/train/train-images/2_1.bmp" afterPath="$PROJECT_DIR$/train/train-text/2_1.bmp" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/train/train-images/2_2.bmp" afterPath="$PROJECT_DIR$/train/train-text/2_2.bmp" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/train/train-images/2_3.bmp" afterPath="$PROJECT_DIR$/train/train-text/2_3.bmp" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/train/train-images/2_4.bmp" afterPath="$PROJECT_DIR$/train/train-text/2_4.bmp" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/train/train-images/2_5.bmp" afterPath="$PROJECT_DIR$/train/train-text/2_5.bmp" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/train/train-images/3_1.bmp" afterPath="$PROJECT_DIR$/train/train-text/3_1.bmp" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/train/train-images/3_2.bmp" afterPath="$PROJECT_DIR$/train/train-text/3_2.bmp" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/train/train-images/3_3.bmp" afterPath="$PROJECT_DIR$/train/train-text/3_3.bmp" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/train/train-images/3_4.bmp" afterPath="$PROJECT_DIR$/train/train-text/3_4.bmp" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/train/train-images/3_5.bmp" afterPath="$PROJECT_DIR$/train/train-text/3_5.bmp" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/train/train-images/4_1.bmp" afterPath="$PROJECT_DIR$/train/train-text/4_1.bmp" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/train/train-images/4_2.bmp" afterPath="$PROJECT_DIR$/train/train-text/4_2.bmp" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/train/train-images/4_3.bmp" afterPath="$PROJECT_DIR$/train/train-text/4_3.bmp" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/train/train-images/4_4.bmp" afterPath="$PROJECT_DIR$/train/train-text/4_4.bmp" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/train/train-images/4_5.bmp" afterPath="$PROJECT_DIR$/train/train-text/4_5.bmp" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/train/train-images/5_1.bmp" afterPath="$PROJECT_DIR$/train/train-text/5_1.bmp" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/train/train-images/5_2.bmp" afterPath="$PROJECT_DIR$/train/train-text/5_2.bmp" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/train/train-images/5_3.bmp" afterPath="$PROJECT_DIR$/train/train-text/5_3.bmp" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/train/train-images/5_4.bmp" afterPath="$PROJECT_DIR$/train/train-text/5_4.bmp" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/train/train-images/5_5.bmp" afterPath="$PROJECT_DIR$/train/train-text/5_5.bmp" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/train/train-images/6_1.bmp" afterPath="$PROJECT_DIR$/train/train-text/6_1.bmp" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/train/train-images/6_2.bmp" afterPath="$PROJECT_DIR$/train/train-text/6_2.bmp" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/train/train-images/6_3.bmp" afterPath="$PROJECT_DIR$/train/train-text/6_3.bmp" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/train/train-images/6_4.bmp" afterPath="$PROJECT_DIR$/train/train-text/6_4.bmp" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/train/train-images/6_5.bmp" afterPath="$PROJECT_DIR$/train/train-text/6_5.bmp" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/train/train-images/7_1.bmp" afterPath="$PROJECT_DIR$/train/train-text/7_1.bmp" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/train/train-images/7_2.bmp" afterPath="$PROJECT_DIR$/train/train-text/7_2.bmp" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/train/train-images/7_3.bmp" afterPath="$PROJECT_DIR$/train/train-text/7_3.bmp" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/train/train-images/7_4.bmp" afterPath="$PROJECT_DIR$/train/train-text/7_4.bmp" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/train/train-images/7_5.bmp" afterPath="$PROJECT_DIR$/train/train-text/7_5.bmp" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/train/train-images/8_1.bmp" afterPath="$PROJECT_DIR$/train/train-text/8_1.bmp" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/train/train-images/8_10.bmp" afterPath="$PROJECT_DIR$/train/train-text/8_10.bmp" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/train/train-images/8_2.bmp" afterPath="$PROJECT_DIR$/train/train-text/8_2.bmp" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/train/train-images/8_3.bmp" afterPath="$PROJECT_DIR$/train/train-text/8_3.bmp" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/train/train-images/8_4.bmp" afterPath="$PROJECT_DIR$/train/train-text/8_4.bmp" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/train/train-images/8_5.bmp" afterPath="$PROJECT_DIR$/train/train-text/8_5.bmp" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/train/train-images/8_6.bmp" afterPath="$PROJECT_DIR$/train/train-text/8_6.bmp" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/train/train-images/8_7.bmp" afterPath="$PROJECT_DIR$/train/train-text/8_7.bmp" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/train/train-images/8_8.bmp" afterPath="$PROJECT_DIR$/train/train-text/8_8.bmp" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/train/train-images/8_9.bmp" afterPath="$PROJECT_DIR$/train/train-text/8_9.bmp" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/train/train-images/9_1.bmp" afterPath="$PROJECT_DIR$/train/train-text/9_1.bmp" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/train/train-images/9_10.bmp" afterPath="$PROJECT_DIR$/train/train-text/9_10.bmp" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/train/train-images/9_2.bmp" afterPath="$PROJECT_DIR$/train/train-text/9_2.bmp" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/train/train-images/9_3.bmp" afterPath="$PROJECT_DIR$/train/train-text/9_3.bmp" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/train/train-images/9_4.bmp" afterPath="$PROJECT_DIR$/train/train-text/9_4.bmp" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/train/train-images/9_5.bmp" afterPath="$PROJECT_DIR$/train/train-text/9_5.bmp" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/train/train-images/9_6.bmp" afterPath="$PROJECT_DIR$/train/train-text/9_6.bmp" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/train/train-images/9_7.bmp" afterPath="$PROJECT_DIR$/train/train-text/9_7.bmp" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/train/train-images/9_8.bmp" afterPath="$PROJECT_DIR$/train/train-text/9_8.bmp" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/train/train-images/9_9.bmp" afterPath="$PROJECT_DIR$/train/train-text/9_9.bmp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/HOG_SVM_DATA.xml" afterPath="$PROJECT_DIR$/HOG_SVM_DATA.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/image-reader/reader.cpp" afterPath="$PROJECT_DIR$/image-reader/reader.cpp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/image-reader/reader.h" afterPath="$PROJECT_DIR$/image-reader/reader.h" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/main.cpp" afterPath="$PROJECT_DIR$/main.cpp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/train/train-images/result.txt" afterPath="$PROJECT_DIR$/train/train-images/result.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/train/train.cpp" afterPath="$PROJECT_DIR$/train/train.cpp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/train/train.h" afterPath="$PROJECT_DIR$/train/train.h" />
     </list>
-    <ignored path="opencv-handwrite-recognize.iws" />
-    <ignored path=".idea/workspace.xml" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -34,110 +149,93 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="main.cpp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/main.cpp">
+      <file leaf-file-name="reader.h" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/image-reader/reader.h">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="239">
-              <caret line="183" column="35" lean-forward="false" selection-start-line="183" selection-start-column="35" selection-end-line="183" selection-end-column="35" />
-              <folding>
-                <element signature="e#0#29#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="165">
+              <caret line="13" column="29" lean-forward="false" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="29" />
+              <folding />
             </state>
           </provider>
         </entry>
       </file>
       <file leaf-file-name="train.cpp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/train.cpp">
+        <entry file="file://$PROJECT_DIR$/train/train.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="240">
-              <caret line="16" column="37" lean-forward="false" selection-start-line="16" selection-start-column="37" selection-end-line="16" selection-end-column="37" />
+            <state relative-caret-position="142">
+              <caret line="201" column="0" lean-forward="false" selection-start-line="201" selection-start-column="0" selection-end-line="201" selection-end-column="0" />
               <folding>
-                <element signature="e#14#32#0" expanded="true" />
+                <element signature="e#0#18#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name=".gitignore" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/.gitignore">
+      <file leaf-file-name="0_5.bmp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/train/train-text/0_5.bmp">
+          <provider selected="true" editor-type-id="images">
+            <state />
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="reader.cpp" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/image-reader/reader.cpp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="119">
+              <caret line="188" column="0" lean-forward="false" selection-start-line="188" selection-start-column="0" selection-end-line="188" selection-end-column="0" />
+              <folding>
+                <element signature="e#0#19#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="inner_functions.cpp" pinned="false" current-in-tab="false">
+        <entry file="file://$USER_HOME$/Downloads/opencv-2.4.13/modules/ml/src/inner_functions.cpp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="2926">
+              <caret line="734" column="24" lean-forward="false" selection-start-line="734" selection-start-column="24" selection-end-line="734" selection-end-column="24" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="result.txt" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/train/train-images/result.txt">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="30">
-              <caret line="2" column="18" lean-forward="false" selection-start-line="2" selection-start-column="18" selection-end-line="2" selection-end-column="18" />
+              <caret line="2" column="0" lean-forward="false" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="dirent.h" pinned="false" current-in-tab="false">
-        <entry file="file:///Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.11.sdk/usr/include/sys/dirent.h">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="197">
-              <caret line="128" column="22" lean-forward="false" selection-start-line="128" selection-start-column="20" selection-end-line="128" selection-end-column="22" />
-              <folding />
-            </state>
+      <file leaf-file-name="0_3.bmp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/train/train-text/0_3.bmp">
+          <provider selected="true" editor-type-id="images">
+            <state />
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="train.h" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/train.h">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="195">
-              <caret line="13" column="1" lean-forward="true" selection-start-line="13" selection-start-column="1" selection-end-line="13" selection-end-column="1" />
-              <folding>
-                <element signature="e#13#32#0" expanded="true" />
-              </folding>
-            </state>
+      <file leaf-file-name="0_1.bmp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/train/train-images/0_1.bmp">
+          <provider selected="true" editor-type-id="images">
+            <state />
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="list" pinned="false" current-in-tab="false">
-        <entry file="file:///Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include/c++/v1/list">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="15">
-              <caret line="236" column="13" lean-forward="false" selection-start-line="236" selection-start-column="13" selection-end-line="236" selection-end-column="13" />
-              <folding />
-            </state>
+      <file leaf-file-name="0_2.bmp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/train/train-text/0_2.bmp">
+          <provider selected="true" editor-type-id="images">
+            <state />
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="dirent.h" pinned="false" current-in-tab="false">
-        <entry file="file:///Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.11.sdk/usr/include/dirent.h">
+      <file leaf-file-name="[" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/train/train-text/[">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-683">
-              <caret line="103" column="21" lean-forward="false" selection-start-line="103" selection-start-column="21" selection-end-line="103" selection-end-column="21" />
-              <folding>
-                <element signature="e#2955#2974#0" expanded="true" />
-                <element signature="e#5039#5472#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="CMakeLists.txt" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/CMakeLists.txt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="90">
-              <caret line="6" column="64" lean-forward="false" selection-start-line="6" selection-start-column="64" selection-end-line="6" selection-end-column="64" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="mousedraw.h" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/mousedraw.h">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="mousedraw.cpp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/mousedraw.cpp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-496">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <state relative-caret-position="-13695">
+              <caret line="0" column="800" lean-forward="false" selection-start-line="0" selection-start-column="800" selection-end-line="0" selection-end-column="800" />
               <folding />
             </state>
           </provider>
@@ -145,21 +243,25 @@
       </file>
     </leaf>
   </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>IPL_DEPTH_8U</find>
+      <find>train</find>
+    </findStrings>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/t10k-images/result.txt" />
-        <option value="$PROJECT_DIR$/label_character_map.txt" />
-        <option value="$PROJECT_DIR$/train-images/createpath.py" />
-        <option value="$PROJECT_DIR$/train-images/result.txt" />
-        <option value="$PROJECT_DIR$/CMakeLists.txt" />
-        <option value="$PROJECT_DIR$/train.h" />
+        <option value="$PROJECT_DIR$/train/train.h" />
+        <option value="$PROJECT_DIR$/common.h" />
         <option value="$PROJECT_DIR$/main.cpp" />
-        <option value="$PROJECT_DIR$/train.cpp" />
-        <option value="$PROJECT_DIR$/.gitignore" />
+        <option value="$PROJECT_DIR$/image-reader/reader.h" />
+        <option value="$PROJECT_DIR$/train/train.cpp" />
+        <option value="$PROJECT_DIR$/train/train-images/result.txt" />
+        <option value="$PROJECT_DIR$/image-reader/reader.cpp" />
       </list>
     </option>
   </component>
@@ -169,17 +271,9 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="JsbtTreeLayoutManager">
-    <layout place="tools.popupGrunt">
-      <scroll-view-position x="0" y="0" />
-    </layout>
-  </component>
-  <component name="OCFindUsagesOptions" text="true" ivars="false" properties="true" derivedClasses="false" />
   <component name="ProjectFrameBounds">
-    <option name="x" value="2" />
-    <option name="y" value="12" />
-    <option name="width" value="1276" />
-    <option name="height" value="777" />
+    <option name="width" value="1280" />
+    <option name="height" value="800" />
   </component>
   <component name="ProjectView">
     <navigator currentView="ProjectPane" proportions="" version="1">
@@ -208,33 +302,92 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="opencv-handwrite-recognize" />
+              <option name="myItemType" value="com.jetbrains.cidr.projectView.CidrFilesViewHelper$MyProjectTreeStructure$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="opencv-handwrite-recognize" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="train" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="opencv-handwrite-recognize" />
+              <option name="myItemType" value="com.jetbrains.cidr.projectView.CidrFilesViewHelper$MyProjectTreeStructure$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="opencv-handwrite-recognize" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="train" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="train-text" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="opencv-handwrite-recognize" />
+              <option name="myItemType" value="com.jetbrains.cidr.projectView.CidrFilesViewHelper$MyProjectTreeStructure$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="opencv-handwrite-recognize" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="train" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="train-images" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="opencv-handwrite-recognize" />
+              <option name="myItemType" value="com.jetbrains.cidr.projectView.CidrFilesViewHelper$MyProjectTreeStructure$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="opencv-handwrite-recognize" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Debug" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
-    <property name="js-jscs-nodeInterpreter" value="/usr/local/bin/node" />
-    <property name="FullScreen" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="nodejs_interpreter_path" value="/usr/local/bin/node" />
     <property name="js.eslint.eslintPackage" value="" />
+    <property name="js-jscs-nodeInterpreter" value="/usr/local/bin/node" />
+    <property name="FullScreen" value="true" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$" />
-      <recent name="$PROJECT_DIR$/train-images" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/train-images" />
+      <recent name="$PROJECT_DIR$/train/train-text" />
     </key>
   </component>
   <component name="RunManager" selected="Application.opencv-handwrite-recognize">
-    <configuration default="true" type="CMakeGoogleTestRunConfigurationType" factoryName="Google Test" PASS_PARENT_ENVS_2="true" PROJECT_NAME="untitled" TARGET_NAME="untitled" CONFIG_NAME="Debug" TEST_MODE="SUITE_TEST">
+    <configuration default="true" type="CMakeGoogleTestRunConfigurationType" factoryName="Google Test" PASS_PARENT_ENVS_2="true" PROJECT_NAME="opencv-handwrite-recognize" TARGET_NAME="opencv-handwrite-recognize" CONFIG_NAME="Debug" TEST_MODE="SUITE_TEST">
       <envs />
       <method />
     </configuration>
-    <configuration default="true" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="untitled" TARGET_NAME="untitled" CONFIG_NAME="Debug">
+    <configuration default="true" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="opencv-handwrite-recognize" TARGET_NAME="opencv-handwrite-recognize" CONFIG_NAME="Debug">
       <envs />
       <method />
     </configuration>
@@ -401,18 +554,13 @@
       <envs />
       <method />
     </configuration>
-    <configuration default="false" name="untitled" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="untitled" TARGET_NAME="untitled" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="untitled" RUN_TARGET_NAME="untitled">
-      <envs />
-      <method />
-    </configuration>
     <configuration default="false" name="opencv-handwrite-recognize" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="opencv-handwrite-recognize" TARGET_NAME="opencv-handwrite-recognize" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="opencv-handwrite-recognize" RUN_TARGET_NAME="opencv-handwrite-recognize">
       <envs />
       <method />
     </configuration>
-    <list size="3">
+    <list size="2">
       <item index="0" class="java.lang.String" itemvalue="Application.Build All" />
-      <item index="1" class="java.lang.String" itemvalue="Application.untitled" />
-      <item index="2" class="java.lang.String" itemvalue="Application.opencv-handwrite-recognize" />
+      <item index="1" class="java.lang.String" itemvalue="Application.opencv-handwrite-recognize" />
     </list>
   </component>
   <component name="ShelveChangesManager" show_recycled="false">
@@ -423,43 +571,35 @@
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="32bd326a-73dd-4d88-a946-ea6deeef3932" name="Default" comment="" />
-      <created>1480931412710</created>
+      <changelist id="76df5820-1b65-4d3b-886e-d158bbe64c18" name="Default" comment="" />
+      <created>1481375824987</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1480931412710</updated>
-      <workItem from="1481035495233" duration="2971000" />
+      <updated>1481375824987</updated>
+      <workItem from="1481375828363" duration="5026000" />
+      <workItem from="1481454246313" duration="13649000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="2971000" />
-  </component>
-  <component name="TodoView">
-    <todo-panel id="selected-file">
-      <is-autoscroll-to-source value="true" />
-    </todo-panel>
-    <todo-panel id="all">
-      <are-packages-shown value="true" />
-      <is-autoscroll-to-source value="true" />
-    </todo-panel>
+    <option name="totallyTimeSpent" value="18675000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="2" y="12" width="1276" height="777" extended-state="0" />
-    <editor active="true" />
+    <frame x="0" y="0" width="1280" height="800" extended-state="0" />
+    <editor active="false" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2565737" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24781573" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32531825" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="CMake" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32876712" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3479491" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3369863" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="CMake" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="true" content_ui="tabs" />
+      <window_info id="Find" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32876712" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32876712" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2780822" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.55445546" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32876712" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.37765205" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -471,14 +611,6 @@
   <component name="TypeScriptGeneratedFilesManager">
     <option name="processedProjectFiles" value="true" />
   </component>
-  <component name="Vcs.Log.UiProperties">
-    <option name="RECENTLY_FILTERED_USER_GROUPS">
-      <collection />
-    </option>
-    <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
-      <collection />
-    </option>
-  </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
   </component>
@@ -486,343 +618,321 @@
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
-          <url>file://$PROJECT_DIR$/train.cpp</url>
-          <line>12</line>
-          <option name="timeStamp" value="3" />
+          <url>file://$PROJECT_DIR$/main.cpp</url>
+          <line>82</line>
+          <option name="timeStamp" value="4" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
+          <url>file://$PROJECT_DIR$/main.cpp</url>
+          <line>61</line>
+          <option name="timeStamp" value="5" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
+          <url>file://$PROJECT_DIR$/main.cpp</url>
+          <line>80</line>
+          <option name="timeStamp" value="7" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
+          <url>file://$PROJECT_DIR$/image-reader/reader.cpp</url>
+          <line>155</line>
+          <option name="timeStamp" value="15" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
+          <url>file://$PROJECT_DIR$/image-reader/reader.cpp</url>
+          <line>172</line>
+          <option name="timeStamp" value="16" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
+          <url>file://$PROJECT_DIR$/image-reader/reader.cpp</url>
+          <line>189</line>
+          <option name="timeStamp" value="17" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
+          <url>file://$PROJECT_DIR$/image-reader/reader.cpp</url>
+          <line>204</line>
+          <option name="timeStamp" value="18" />
         </line-breakpoint>
       </breakpoints>
-      <option name="time" value="4" />
+      <option name="time" value="19" />
     </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/tools/createpath.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/train-images/result.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="20" column="0" lean-forward="false" selection-start-line="2" selection-start-column="54" selection-end-line="2" selection-end-column="58" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/train-images/createpath.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="780">
-          <caret line="52" column="48" lean-forward="false" selection-start-line="52" selection-start-column="48" selection-end-line="52" selection-end-column="48" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/CMakeLists.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" column="0" lean-forward="false" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/train-images/10_0.bmp">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/main.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="126" column="31" lean-forward="false" selection-start-line="126" selection-start-column="31" selection-end-line="126" selection-end-column="31" />
+        <state relative-caret-position="2460">
+          <caret line="164" column="0" lean-forward="false" selection-start-line="164" selection-start-column="0" selection-end-line="164" selection-end-column="0" />
           <folding>
             <element signature="e#0#29#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/label_character_map.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
+    <entry file="file://$PROJECT_DIR$/numbers.jpg">
+      <provider selected="true" editor-type-id="images">
+        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/HOG_SVM_DATA.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        <state relative-caret-position="225">
+          <caret line="15" column="14" lean-forward="false" selection-start-line="15" selection-start-column="14" selection-end-line="15" selection-end-column="14" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/train-images/1_0.bmp">
+    <entry file="file://$PROJECT_DIR$/numbers.gif">
       <provider selected="true" editor-type-id="images">
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/t10k-images/result.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="105" column="1" lean-forward="false" selection-start-line="105" selection-start-column="1" selection-end-line="105" selection-end-column="1" />
-        </state>
+    <entry file="file://$PROJECT_DIR$/meinv.jpeg">
+      <provider selected="true" editor-type-id="images">
+        <state />
       </provider>
     </entry>
-    <entry file="file:///usr/local/include/opencv2/ml/ml.hpp" />
-    <entry file="file:///usr/local/include/opencv2/objdetect/objdetect.hpp" />
-    <entry file="file:///Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include/c++/v1/fstream">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="1046" column="33" lean-forward="false" selection-start-line="1046" selection-start-column="33" selection-end-line="1046" selection-end-column="33" />
-        </state>
+    <entry file="file://$PROJECT_DIR$/multi_numbers.jpg">
+      <provider selected="true" editor-type-id="images">
+        <state />
       </provider>
     </entry>
-    <entry file="file:///Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include/c++/v1/string">
+    <entry file="file://$PROJECT_DIR$/numbers.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/image-reader/reader.cpp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
-          <caret line="3350" column="43" lean-forward="false" selection-start-line="3350" selection-start-column="43" selection-end-line="3350" selection-end-column="43" />
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="e#120190#120237#0" expanded="false" />
+            <element signature="e#0#19#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/CMakeLists.txt">
+    <entry file="file://$PROJECT_DIR$/image-reader/reader.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="7" column="0" lean-forward="false" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
+        <state relative-caret-position="165">
+          <caret line="11" column="56" lean-forward="true" selection-start-line="11" selection-start-column="56" selection-end-line="11" selection-end-column="56" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file:///usr/local/include/opencv2/core/core_c.h" />
-    <entry file="file:///usr/local/include/opencv2/core/types_c.h" />
-    <entry file="file:///usr/local/include/opencv2/highgui/highgui_c.h" />
-    <entry file="file:///Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.11.sdk/usr/include/sys/cdefs.h">
+    <entry file="file://$USER_HOME$/Downloads/opencv-2.4.13/modules/imgproc/src/imgwarp.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="516" column="8" lean-forward="false" selection-start-line="516" selection-start-column="8" selection-end-line="516" selection-end-column="8" />
+        <state relative-caret-position="143">
+          <caret line="4073" column="0" lean-forward="false" selection-start-line="4073" selection-start-column="0" selection-end-line="4073" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file:///Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include/c++/v1/fstream">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="1046" column="33" lean-forward="false" selection-start-line="1046" selection-start-column="33" selection-end-line="1046" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file:///usr/local/include/opencv2/objdetect/objdetect.hpp" />
-    <entry file="file:///usr/local/include/opencv2/ml/ml.hpp" />
-    <entry file="file://$PROJECT_DIR$/t10k-images/result.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="105" column="1" lean-forward="false" selection-start-line="105" selection-start-column="1" selection-end-line="105" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file:///Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include/c++/v1/string">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="1780" column="0" lean-forward="false" selection-start-line="1780" selection-start-column="0" selection-end-line="1780" selection-end-column="0" />
-          <folding>
-            <element signature="e#120190#120237#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/train-images/1_0.bmp">
+    <entry file="file://$PROJECT_DIR$/numbers.png">
       <provider selected="true" editor-type-id="images">
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/train-images/0_0.bmp">
+    <entry file="file://$PROJECT_DIR$/multi_numbers.jpg">
       <provider selected="true" editor-type-id="images">
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/train-images/2_0.bmp">
+    <entry file="file://$PROJECT_DIR$/numbers.gif">
       <provider selected="true" editor-type-id="images">
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/train-images/3_0.bmp">
+    <entry file="file://$PROJECT_DIR$/numbers.jpg">
       <provider selected="true" editor-type-id="images">
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/train-images/4_0.bmp">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/train-images/5_0.bmp">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/train-images/6_0.bmp">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/train-images/7_0.bmp">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/label_character_map.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="15" column="0" lean-forward="false" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/HOG_SVM_DATA.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="10" column="28" lean-forward="false" selection-start-line="10" selection-start-column="2" selection-end-line="10" selection-end-column="28" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/train-images/14_0.bmp">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tools/result.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/train-images/result.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="20" column="0" lean-forward="false" selection-start-line="2" selection-start-column="54" selection-end-line="2" selection-end-column="58" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/train-images/10_0.bmp">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/train-images/createpath.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="780">
-          <caret line="52" column="48" lean-forward="false" selection-start-line="52" selection-start-column="48" selection-end-line="52" selection-end-column="48" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file:///Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.11.sdk/usr/include/unistd.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tools/createpath.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/CMakeLists.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="6" column="64" lean-forward="false" selection-start-line="6" selection-start-column="64" selection-end-line="6" selection-end-column="64" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mousedraw.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mousedraw.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-496">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file:///Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.11.sdk/usr/include/dirent.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-683">
-          <caret line="103" column="21" lean-forward="false" selection-start-line="103" selection-start-column="21" selection-end-line="103" selection-end-column="21" />
-          <folding>
-            <element signature="e#2955#2974#0" expanded="true" />
-            <element signature="e#5039#5472#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file:///Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include/c++/v1/list">
+    <entry file="file:///Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include/c++/v1/vector">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="15">
-          <caret line="236" column="13" lean-forward="false" selection-start-line="236" selection-start-column="13" selection-end-line="236" selection-end-column="13" />
+          <caret line="1592" column="0" lean-forward="false" selection-start-line="1592" selection-start-column="0" selection-end-line="1592" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file:///Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.11.sdk/usr/include/sys/dirent.h">
+    <entry file="file:///usr/local/include/opencv2/core/types_c.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="197">
-          <caret line="128" column="22" lean-forward="false" selection-start-line="128" selection-start-column="20" selection-end-line="128" selection-end-column="22" />
+        <state relative-caret-position="127">
+          <caret line="607" column="8" lean-forward="false" selection-start-line="607" selection-start-column="8" selection-end-line="607" selection-end-column="8" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/train.h">
+    <entry file="file://$PROJECT_DIR$/HOG_SVM_DATA.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="13" column="1" lean-forward="true" selection-start-line="13" selection-start-column="1" selection-end-line="13" selection-end-column="1" />
+        <state relative-caret-position="150">
+          <caret line="10" column="12" lean-forward="false" selection-start-line="10" selection-start-column="3" selection-end-line="10" selection-end-column="12" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///usr/local/include/opencv2/core/core_c.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="127">
+          <caret line="86" column="13" lean-forward="false" selection-start-line="86" selection-start-column="13" selection-end-line="86" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/meinv.jpeg">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/train/train.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="9" column="5" lean-forward="true" selection-start-line="9" selection-start-column="5" selection-end-line="9" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mouse-draw/mousedraw.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="e#13#32#0" expanded="true" />
+            <element signature="e#0#22#0" expanded="false" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/t10k-images/0_0.bmp">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/t10k-images/0_3.bmp">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/t10k-images/0_5.bmp">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/t10k-images/0_8.bmp">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/common.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="23" column="37" lean-forward="true" selection-start-line="23" selection-start-column="37" selection-end-line="23" selection-end-column="37" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/main.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="239">
-          <caret line="183" column="35" lean-forward="false" selection-start-line="183" selection-start-column="35" selection-end-line="183" selection-end-column="35" />
+        <state relative-caret-position="585">
+          <caret line="74" column="0" lean-forward="true" selection-start-line="74" selection-start-column="0" selection-end-line="74" selection-end-column="0" />
           <folding>
             <element signature="e#0#29#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/train.cpp">
+    <entry file="file://$PROJECT_DIR$/train/train-text/1_2.bmp">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/train/train-text/0_4.bmp">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/train/train-text/1_3.bmp">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/train/train-text/1_4.bmp">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/train/train-text/2_2.bmp">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/train/train-text/[">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="16" column="37" lean-forward="false" selection-start-line="16" selection-start-column="37" selection-end-line="16" selection-end-column="37" />
+        <state relative-caret-position="-13695">
+          <caret line="0" column="800" lean-forward="false" selection-start-line="0" selection-start-column="800" selection-end-line="0" selection-end-column="800" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/image-reader/reader.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="13" column="29" lean-forward="false" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="29" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/train/train-text/0_5.bmp">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/train/train-text/0_3.bmp">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/train/train-text/0_2.bmp">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/train/train-images/0_1.bmp">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Downloads/opencv-2.4.13/modules/ml/src/inner_functions.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2926">
+          <caret line="734" column="24" lean-forward="false" selection-start-line="734" selection-start-column="24" selection-end-line="734" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/train/train-images/result.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="0" lean-forward="false" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/train/train.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="142">
+          <caret line="201" column="0" lean-forward="false" selection-start-line="201" selection-start-column="0" selection-end-line="201" selection-end-column="0" />
           <folding>
-            <element signature="e#14#32#0" expanded="true" />
+            <element signature="e#0#18#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/.gitignore">
+    <entry file="file://$PROJECT_DIR$/image-reader/reader.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="18" lean-forward="false" selection-start-line="2" selection-start-column="18" selection-end-line="2" selection-end-column="18" />
-          <folding />
+        <state relative-caret-position="119">
+          <caret line="188" column="0" lean-forward="false" selection-start-line="188" selection-start-column="0" selection-end-line="188" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#19#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
