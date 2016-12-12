@@ -17,7 +17,7 @@ using namespace cv;
 
 void buildImg() {
     BoxExtractor box;
-    Mat res = box.MouseDraw("draw", Mat(400, 400, CV_8UC3, Scalar(0, 0, 0)), Scalar(255, 255, 255), 18);
+    Mat res = box.MouseDraw("draw", Mat(800, 800, CV_8UC3, Scalar(0, 0, 0)), Scalar(255, 255, 255), 18);
     string mouse_draw_img = MOUSE_DRAW_IMG;
     imwrite(mouse_draw_img, res);
 }
@@ -68,29 +68,39 @@ void testPredict(IplImage* img) {
 
 int main() {
 
+//
+//      IplImage* src=cvLoadImage((getProjectDir()+"/numbers.png").c_str());
+//      cvShowImage("src",src);
+//      cvWaitKey(2000);
+//      IplImage* dst=cvCreateImage(cvSize(100,400),IPL_DEPTH_8U,1);
+//      cvSetImageROI(src,cvRect(0,0,100,400));
+//      cvCopy(src,dst,0);
+//      cvShowImage("dst",dst);
+//      cvWaitKey(2000);
+//
+//    Train::FileScanner fileScanner;
 
-    Train::FileScanner fileScanner;
+//    fileScanner.train();
 
-    fileScanner.train();
+//    return 0;
 
 //    testTrain();
 //    return 0;
+    buildImg();
 
-
-//    Reader::ImageReader image_reader;
-//    string s_image_url=getProjectDir()+"/numbers.jpg";
-//    const char* image_url=s_image_url.c_str();
-//    list<list<IplImage*>> imgMat=image_reader.readMatOfImage(image_url);
-//    while (!imgMat.empty()){
-//        list<IplImage*> listItem= imgMat.front();
-//        while(!listItem.empty()){
-//            IplImage* img=listItem.front();
-//            testPredict(img);
-//
-//            listItem.pop_front();
-//        }
-//        imgMat.pop_front();
-//    }
+    Reader::ImageReader image_reader;
+    string s_image_url=MOUSE_DRAW_IMG;
+    const char* image_url=s_image_url.c_str();
+    list<list<IplImage*>> imgMat=image_reader.readMatOfImage(image_url);
+    while (!imgMat.empty()){
+        list<IplImage*> listItem= imgMat.front();
+        while(!listItem.empty()){
+            IplImage* img=listItem.back();
+            testPredict(img);
+            listItem.pop_back();
+        }
+        imgMat.pop_front();
+    }
 
     return 0;
 }

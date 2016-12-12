@@ -3,7 +3,7 @@
 #include <iostream>
 #include <list>
 
-#define EXPECTED_RGB_VAL 100
+#define EXPECTED_RGB_VAL 200
 #define EXPECTED_PTS_CNT 10
 #define SCAN_IMAGE_LENGTH 10
 
@@ -19,14 +19,16 @@ list<list<IplImage *>> Reader::ImageReader::readMatOfImage(const char *image_url
     IplImage *image = cvLoadImage(image_url);
     IplImage *grayImage = cvCreateImage(cvGetSize(image), IPL_DEPTH_8U, 1);
     cvCvtColor(image, grayImage, CV_RGB2GRAY);
-    IplImage *pCannyImg = cvCreateImage(cvGetSize(grayImage), IPL_DEPTH_8U, 1);
-    cvCanny(grayImage, pCannyImg, 250, 200, 3);
-    list<IplImage *> yIplImages = this->cutIplImage(pCannyImg, "y");
+//    IplImage *pCannyImg = cvCreateImage(cvGetSize(grayImage), IPL_DEPTH_8U, 1);
+//    cvCanny(grayImage, pCannyImg, 250, 200, 3);
+    cvShowImage("gray",grayImage);
+    cvWaitKey(0);
+    list<IplImage *> yIplImages = this->cutIplImage(grayImage, "y");
     while (!yIplImages.empty()) {
         list<IplImage *> listItem;
         IplImage *img = yIplImages.front();
-        cvShowImage("aaaa", img);
-        cvWaitKey(0);
+//        cvShowImage("aaaa", img);
+//        cvWaitKey(0);
         listItem = this->cutIplImage(img, "x");
         res.push_front(listItem);
         yIplImages.pop_front();
@@ -77,8 +79,8 @@ list<IplImage *> Reader::ImageReader::cutIplImage(IplImage *image, string direct
                 startFound = false;
                 end = i * SCAN_IMAGE_LENGTH;
                 IplImage *img = this->getRowIplImage(image, start, end, direction);
-                cvShowImage("bbb", img);
-                cvWaitKey(0);
+//                cvShowImage("bbb", img);
+//                cvWaitKey(0);
                 res.push_front(img);
             }
         }
@@ -105,15 +107,13 @@ IplImage *Reader::ImageReader::getRowIplImage(IplImage *image, int startRow, int
 }
 
 int Reader::ImageReader::getRowScanImgExpectCnt(IplImage *image) {
-    char *imageData = image->imageData;
     int count = 0;
-
-    for (int i = 0; i < (image->width)*(image->height); i++) {
-        int cVal = (int) *(unsigned char *) (imageData + i);
-        printf("%d-",cVal);
-        if (cVal > EXPECTED_RGB_VAL)count++;
+    for(int i=0;i<image->height;i++){
+        for(int j=0;j<image->width;j++) {
+            int cVal= (int)*(unsigned char*)(image->imageData+i*image->widthStep+j);
+            if (cVal > EXPECTED_RGB_VAL)count++;
+        }
     }
-    printf("\n");
     return count;
 }
 
@@ -137,17 +137,60 @@ IplImage *Reader::ImageReader::cutGrayImageByColorVal(IplImage *img, int colorVa
         cout << "该图片不是灰度图！" << endl;
         return res;
     }
+    ofstream resMat(getProjectDir()+"/resMat.txt");
+//    for(int i=0;i<img->height;i++){
+//        for(int j=0;j<img->width;j++) {
+//            char cVal= *(unsigned char*)(img->imageData+i*img->widthStep+j);
+//            int a=(int)cVal;
+//            printf("%d-",cVal);
+//            resMat<<a<<"-";
+//        }
+//        printf("\n");
+//        resMat<<endl;
+//    }
+
+//    IplImage* cpImg=cvCreateImage(cvSize(1,img->height),IPL_DEPTH_8U,1);
+//    cvSetImageROI(img, cvRect(0, 0, 1, img->height));
+//    cvCopy(img,cpImg);
+
+//    resMat<<endl;
+//    resMat<<endl;
+//    resMat<<endl;
+//    resMat<<endl;
+//    resMat<<endl;
+//    resMat<<endl;
+//    for(int k=0;k<cpImg->width*cpImg->height;k++){
+//        int cVal= (int)*(unsigned char*)(img->imageData+k);
+//        resMat<<cVal<<"-";
+//    }
+//    resMat<<endl;
+//
+//
+//    resMat.close();
+//
+//    return res;
+//    CvMat* mat=cvCreateMatHeader(1,img->height,CV_8UC1);
+
+//    CvMat* mat2=cvGetCol(img,mat,6);
+
+
+//    return res;
+
+    IplImage* cpImg;
     //找出上边界
     int topBound = 0;
     while (topBound < img->height) {
-        IplImage* cpImg=cvCreateImage(cvSize(img->width,1),IPL_DEPTH_8U,1);
-        cvSetImageROI(img, cvRect(0, topBound, img->width, 1));
+        cpImg=cvCreateImage(cvSize(img->width,5),IPL_DEPTH_8U,1);
+        cvSetImageROI(img, cvRect(0, topBound, img->width, 5));
         cvCopy(img,cpImg);
+        cvResetImageROI(img);
+//        cvShowImage("top",cpImg);
+//        cvWaitKey(1000);
         int count=this->getRowScanImgExpectCnt(cpImg);
         if(count!=0){
-            printf("%d:%d-",topBound,count);
-
+            resMat<<topBound<<":"<<count<<endl;
             cvResetImageROI(img);
+            cvReleaseImage(&cpImg);
             break;
         }
         topBound++;
@@ -155,16 +198,19 @@ IplImage *Reader::ImageReader::cutGrayImageByColorVal(IplImage *img, int colorVa
     //找出下边界
     int bottomBound=img->height-1;
     while (bottomBound >0) {
-        IplImage* cpImg=cvCreateImage(cvSize(img->width,1),IPL_DEPTH_8U,1);
-        cvSetImageROI(img, cvRect(0, bottomBound, img->width, 1));
+        cpImg=cvCreateImage(cvSize(img->width,5),IPL_DEPTH_8U,1);
+        cvSetImageROI(img, cvRect(0, bottomBound-5, img->width, 5));
         cvCopy(img,cpImg);
+        cvResetImageROI(img);
+
+//        cvShowImage("bottom",cpImg);
+//        cvWaitKey(1000);
         int count=this->getRowScanImgExpectCnt(cpImg);
 
         if(count!=0){
-            printf("%d:%d-",bottomBound,count);
-
-
+            resMat<<bottomBound<<":"<<count<<endl;
             cvResetImageROI(img);
+            cvReleaseImage(&cpImg);
             break;
         }
         bottomBound--;
@@ -172,16 +218,18 @@ IplImage *Reader::ImageReader::cutGrayImageByColorVal(IplImage *img, int colorVa
     //找出左边界
     int leftBound=0;
     while (leftBound < img->width) {
-        IplImage* cpImg=cvCreateImage(cvSize(1,img->height),IPL_DEPTH_8U,1);
+        cpImg=cvCreateImage(cvSize(5,img->height),IPL_DEPTH_8U,1);
         cvSetZero(cpImg);
-        cvSetImageROI(img, cvRect(leftBound, 0, 1, img->height));
+        cvSetImageROI(img, cvRect(leftBound, 0, 5, img->height));
         cvCopy(img,cpImg);
+        cvResetImageROI(img);
+//        cvShowImage("left",cpImg);
+//        cvWaitKey(1000);
         int count=this->getRowScanImgExpectCnt(cpImg);
-
         if(count!=0){
-            printf("%d:%d-",leftBound,count);
-
+            resMat<<leftBound<<":"<<count<<endl;
             cvResetImageROI(img);
+            cvReleaseImage(&cpImg);
             break;
         }
         leftBound++;
@@ -189,19 +237,22 @@ IplImage *Reader::ImageReader::cutGrayImageByColorVal(IplImage *img, int colorVa
     //找出右边界
     int rightBound=img->width-1;
     while (rightBound >0) {
-        IplImage* cpImg=cvCreateImage(cvSize(1,img->height),IPL_DEPTH_8U,1);
-        cvSetImageROI(img, cvRect(rightBound,0, 1, img->height));
+        cpImg=cvCreateImage(cvSize(5,img->height),IPL_DEPTH_8U,1);
+        cvSetImageROI(img, cvRect(rightBound-5,0, 5, img->height));
         cvCopy(img,cpImg);
+        cvResetImageROI(img);
+//        cvShowImage("right",cpImg);
+//        cvWaitKey(1000);
         int count=this->getRowScanImgExpectCnt(cpImg);
-
         if(count!=0){
-            printf("%d:%d\n",rightBound,count);
+            resMat<<rightBound<<":"<<count<<endl;
             cvResetImageROI(img);
+            cvReleaseImage(&cpImg);
             break;
         }
         rightBound--;
     }
-
+    resMat.close();
     res=cvCreateImage(cvSize(rightBound-leftBound,bottomBound-topBound),IPL_DEPTH_8U,1);
     CvRect rect = cvRect(leftBound, topBound, rightBound-leftBound, bottomBound-topBound);
 //    printf("(%d,%d,%d,%d)",leftBound,topBound,rightBound-leftBound,bottomBound-topBound);

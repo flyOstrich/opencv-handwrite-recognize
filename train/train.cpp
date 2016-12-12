@@ -199,13 +199,15 @@ void Train::FileScanner::train() {
         Reader::ImageReader reader;
         char a=(char)i;
         reader.saveIplImageData(grayImage,getProjectDir()+"/train/train-text/"+a);
-        src=reader.cutGrayImageByColorVal(grayImage,200);
 //        cout << "deal with\t" << img_path[i].c_str() << endl;
-//        cvResize(src, trainImg);
+        src=reader.cutGrayImageByColorVal(grayImage,200);
 
 
-//        cvvShowImage("train img", src);
-//        cvWaitKey(500);
+
+        cvResize(src, trainImg);
+        cvvShowImage("train img", trainImg);
+
+        cvWaitKey(100);
 
         HOGDescriptor *hog = new HOGDescriptor(
                 cvSize(28, 28)    //winSize
@@ -215,14 +217,14 @@ void Train::FileScanner::train() {
                 , 9); //9表示每个胞单元中梯度直方图的数量
         vector<float> descriptors;//存放结果
         hog->compute(trainImg, descriptors, Size(28, 28), Size(0, 0)); //Hog特征计算
-//        cout << "HOG dims: " << descriptors.size() << endl;
+        cout << "HOG dims: " << descriptors.size() << endl;
         n = 0;
         for (vector<float>::iterator iter = descriptors.begin(); iter != descriptors.end(); iter++) {
             cvmSet(data_mat, i, n, *iter);//存储HOG特征
             n++;
         }
         cvmSet(res_mat, i, 0, img_catg[i]);
-//        cout << "Done !!!: " << img_path[i].c_str() << " " << img_catg[i] << endl;
+        cout << "Done !!!: " << img_path[i].c_str() << " " << img_catg[i] << endl;
     }
     CvSVM svm;//新建一个SVM
     CvSVMParams param;//这里是SVM训练相关参数
